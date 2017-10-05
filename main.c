@@ -3,8 +3,8 @@
 
 int main(){
     printf("%d\n",my_strlen("yes"));
-    /*char x[5];
-    printf("%s\n",my_strcpy(x,"hello"));*/
+    char x[5];
+    printf("%s\n",my_strcpy(x,"hello"));
     char y[5]="snake";
     printf("%s\n\n",my_strcat(y,"_case"));
     //MY_STRCMP() TEST
