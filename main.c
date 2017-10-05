@@ -3,12 +3,20 @@
 #include "functions.h"
 
 int main(){
-    printf("%d\n",my_strlen("yes"));
+    printf("\n---my_strlen() Test---\n");
+    printf("Expected: Length of 'yes' %lu\n", strlen("yes"));
+    printf("Result: Length of 'yes': %d\n\n",my_strlen("yes"));
     char x[5];
-    printf("%s\n",my_strcpy(x,"hello"));
-    char y[10]="snake";
-    printf("%s\n\n",my_strcat(y,"_case"));
+    printf("---my_strcpy() Test---\n");
+    printf("Expected: Copy first 3 letters of 'hello': %s\n",strncpy(x,"hello",3));
+    printf("Result: Copy first 3 letters of 'hello': %s\n\n",my_strncpy(x,"hello",3));
+    char y[11]="snake";
+    char z[11]="snake";
+    printf("---my_strcat() Test---\n");
+    printf("Expected: Concatenate 'snake' and '_case': %s\n",strcat(y,"_case"));
+    printf("Result: Concatenate 'snake' and '_case': %s\n\n",my_strcat(z,"_case"));
     //MY_STRCMP() TEST
+    printf("---my_strcmp() Test---\n");
     printf("Expected: Hello vs Helloo: %d\n", strcmp("Hello", "Helloo"));
     printf("Result: Hello vs Helloo: %d\n", my_strcmp("Hello", "Helloo"));
     printf("Expected: Hello vs Stuy: %d\n", strcmp("Hello", "Stuy"));
@@ -16,7 +24,8 @@ int main(){
     printf("Expected: Hello vs '': %d\n", strcmp("Hello", ""));
     printf("Result: Hello vs '': %d\n\n", my_strcmp("Hello", ""));
 
-    //MY_STRCHR() TEST
+    //MY_STRCHR TEST
+    printf("---my_strchr() Test---\n");
     printf("Expected: 'H' in Hello: %s\n", strchr("Hello", 'H'));
     printf("Result: 'H' in Hello: %s\n", my_strchr("Hello", 'H'));
     printf("Expected: 'l' in Hello: %s\n", strchr("Hello", 'l'));

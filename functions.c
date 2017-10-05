@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+//Returns Length of String
 int my_strlen(char *x){
     int y=0;
     while (x[y]){
@@ -9,9 +10,10 @@ int my_strlen(char *x){
     return y;
 }
 
-char *my_strcpy(char *dest, char *source){
+//
+char *my_strncpy(char *dest, char *source, int n){
     int i;
-    for (i=0; source[i]!='\0'; i++){
+    for (i=0; source[i]!='\0' && i < n; i++){
         dest[i]=source[i];
     }
     dest[i]='\0';
