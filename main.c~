@@ -3,8 +3,8 @@
 
 int main(){
     printf("%d\n",my_strlen("yes"));
-    /*char x[5];
-    printf("%s\n",my_strcpy(x,"hello"));*/
+    char x[5];
+    printf("%s\n",my_strcpy(x,"hello"));
     char y[5]="snake";
     printf("%s\n\n",my_strcat(y,"_case"));
     //MY_STRCMP() TEST
@@ -16,10 +16,10 @@ int main(){
     printf("Result: Hello vs '': %d\n\n", my_strcmp("Hello", ""));
 
     //MY_STRCHR() TEST
-    printf("Expected: 'H' in Hello: %s\n", strchr("Hello", 'H'));
-    printf("Result: 'H' in Hello: %s\n", my_strchr("Hello", 'H'));
-    printf("Expected: 'l' in Hello: %s\n", strchr("Hello", 'l'));
-    printf("Result: 'l' in Hello: %s\n", my_strchr("Hello", 'l'));
+    printf("Expected: 'H' in Hello: %p\n", strchr("Hello", 'H'));
+    printf("Result: 'H' in Hello: %p\n", my_strchr("Hello", 'H'));
+    printf("Expected: 'l' in Hello: %p\n", strchr("Hello", 'l'));
+    printf("Result: 'l' in Hello: %p\n", my_strchr("Hello", 'l'));
     printf("Expected: 'i' in Anish: %s\n", strchr("Anish", 'i'));
     printf("Result: 'i' in Anish: %s\n", my_strchr("Anish", 'i'));
     printf("Expected: 'j' in Stuy: %s\n", strchr("Stuy", 'j'));
