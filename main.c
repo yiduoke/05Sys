@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include "functions.h"
 
 int main(){
     printf("%d\n",my_strlen("yes"));
     char x[5];
     printf("%s\n",my_strcpy(x,"hello"));
-    char y[5]="snake";
+    char y[10]="snake";
     printf("%s\n\n",my_strcat(y,"_case"));
     //MY_STRCMP() TEST
     printf("Expected: Hello vs Helloo: %d\n", strcmp("Hello", "Helloo"));
