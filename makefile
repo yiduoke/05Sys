@@ -6,3 +6,9 @@ functions.o: functions.c functions.h
 
 main.o: main.c functions.h
 	gcc -c main.c
+	
+run: all
+	./strtest
+
+clean:
+	rm *.o
