@@ -1,4 +1,4 @@
-strtest: functions.o main.o
+all: functions.o main.o
 	gcc -o strtest functions.o main.o
 
 functions.o: functions.c functions.h
@@ -6,9 +6,10 @@ functions.o: functions.c functions.h
 
 main.o: main.c functions.h
 	gcc -c main.c
-	
-run: all
-	./strtest
 
 clean:
 	rm *.o
+	rm *~
+
+run: all
+	./strtest
